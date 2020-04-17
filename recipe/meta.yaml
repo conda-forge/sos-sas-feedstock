@@ -1,13 +1,13 @@
 {% set name = "sos-sas" %}
-{% set version = "0.18.0" %}
+{% set version = "0.19.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8611cb450f86f2d07b74ea1043ec0bc40fb1b19a98c8c7aa52db889b12211891
+  sha256: 22c03d9500910f0e0e400312d80ca06a4c2c4f395c9f0c1077d98e93c7cc6b6b
 
 build:
   noarch: python
@@ -35,7 +35,7 @@ about:
   license: BSD
   license_family: BSD
   license_file: LICENSE
-  summary: "SoS language module for SAS"
+  summary: SoS language module for SAS
   doc_url: https://vatlab.github.io/sos-docs/
   dev_url: https://github.com/vatlab/sos-sas
 
