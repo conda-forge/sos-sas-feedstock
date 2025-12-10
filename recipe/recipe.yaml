@@ -27,7 +27,7 @@ requirements:
     - sas_kernel
     - saspy
     - sas7bdat
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
 
 tests:
   - python:
