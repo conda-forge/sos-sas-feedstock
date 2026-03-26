@@ -1,18 +1,18 @@
 schema_version: 1
 
 context:
-  version: 0.20.0
+  version: "0.20.1"
 
 package:
   name: sos-sas
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/s/sos-sas/sos-sas-${{ version }}.tar.gz
-  sha256: fd81c5102afdc511ba98a9fd6ef1f535e5f127674e28e160bb993920de1a1949
+  url: https://pypi.org/packages/source/s/sos-sas/sos_sas-${{ version }}.tar.gz
+  sha256: 63c7380c157e63ff348b583c7309df25b9efab478661a1272886c82ac4edc194
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - sed -i '/saspy/d' setup.py
